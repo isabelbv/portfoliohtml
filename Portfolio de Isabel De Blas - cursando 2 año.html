@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head><!--se puede usar en otros sitios-->
+        <meta charset="utf-8"><!--codificacion-->
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="esesuceso.css">
+        <title>Portfolio de Isabel De Blas - cursando 2 año  
+        </title>
+
+        <meta name="descripcion" content="Portfolio de Isabel 1 año de experiencia como estudiante de grado superior de DAW">
+
+        <!--OPEN GRAPH importante para seo-->
+        <meta property="og:title"content="Portfolio de una estudiante">
+
+        <meta property="og:descripcion"content="Portfolio de una estudiante de segundo año de grado superior">
+        <meta property="og:photo-image" content="/yoisafoto.jpg">
+        <meta property="og:photo-image:alt"content="imagen de estudiante ">
+
+        <link rel="alternate"href="https://localhost:300" hreflang="es-ES">
+        <link rel="canonical"href="https://localhost:300/index.html" >
+
+
+        <meta name="robots" content="index,follow">
+        <meta name="theme-color" content="#8f7ada">
+
+        <link rel="icon" type="image/jpeg" href="/yoisafoto.jpg">
+    </head>
+
+    <body>
+    
+        <header>
+            <aside class="container-logos">
+            <a 
+             href="https://www.instagram.com/isabel.deblasvinas/"
+             target="_blank"
+             rel="noreferrer">
+                <img class="icon"  src="./instagram.png"alt="">
+            <a  href="https://github.com/isabelbv"
+            target="_blank"
+            rel="noreferrer">
+                <img class="icon"  src="./github.png"alt="" >
+            </a>
+            </aside>
+          
+             
+      <!--aqui tu comentario-->
+        <h1>Portfolio de Isabel De Blas 👩‍💻</h1>
+        
+
+        <a  class="container-img" download href="/yoisafoto.jpg"><!--para descargar imagen/videos recursos de propio dominio-->
+            <img class="img" title="fotografia de isabel"width=200px height=280px
+                alt="fotografia de isabel de blas posando de cara en el coche "
+                src="/yoisafoto.jpg">
+
+                <section3>
+                <audio  controls src="42326314_MotionElements_vlog-travel-video-ghibli-style-song_preview.mp3"></audio>
+                </section3>
+
+        </a>
+
+        
+         <nav>
+      
+        <!--enlaces externos-->
+       
+            <a href="#Experiencia">Experiencia</a>
+            <a href="#Aprendiendo">Aprendiendo</a><!--enlaces internos-->
+            <a href="#Formulario">Formulario</a>
+             
+             
+        </nav>
+       
+        </header>
+ 
+        
+      
+
+     <section>
+        <main><!--contenido que cambia por cada url-->
+          <p1><strong>Estudiante de grado superior de 2  año de DAW </strong></p1>
+       
+       <details open>
+        
+         <summary>¿Cuales son tus hobbies?</summary>
+            <p> actualmente 💡 aprende un curso de html y estudia para fullstack en aplicacion mimo</p>
+            <video class="vid" autoplay loop controls  src="videoplayback.mp4"></video>
+    
+         </details>
+          <!--  <button> ver</button> --podrias poner la etiqueta role de esta manera <dive role="button">(preferible utilizar el elemento correcto) en este caso como ya tienes el codigo-->
+        
+
+
+        <article>
+
+           
+            <!--con lo que tenemos en nav y la id conseguimos en lazar la pagina con el link id="experiencia"-->
+           <h2 id ="Experiencia"> Experiencia⤵ </h2>
+            
+        <details>
+            <summary>¿que estudios tienes?</summary>   
+        <ul>  
+
+            <li class="list-item"> Primer año de DAW - 2025✔️</li>
+
+            <li class="list-item">Segundo año de DAW-2026🔄⏳</li>
+
+        </ul>
+        </details>
+     <aside><!-- da informacion suplementaria a la informacion principal-->
+        <header>
+
+
+            <h3 id="Aprendiendo">Aprendiendo....</h3>
+
+            <ol type ="1"reversed start="3">
+                <li> HTML🔓</li>
+                <li value="1">CSS🔒</li>
+                <li>JAVA🔒</li>
+            </ol>
+        </header>
+            
+      </aside>
+      <article>
+        
+         
+      </article>
+
+      </section>
+        
+            <strong>  aprende de forma autodidacta cursos adicionales</strong>
+        </article>
+
+
+    
+    <section>
+        <h2 id="Formulario">Formulario de contacto</h2>
+         <details>
+            <summary> para cualquier duda</summary>
+        <form method="post" action ="/">
+            <fieldset>
+                <legend><strong>  Informacion personal</strong></legend>
+            <!--<label>Nombre:
+                <input 
+                type="text"
+                name="name"
+                placeholder="isabe de blas"
+            </label>-->
+            <div>
+                <label for="name">Nombre:</label> <!-- for atributo para input name hace que la etiqueta te lleve al input otra opcion es envolver el label con el input asi -->
+                <input type="text" id="name" name="name"
+                placeholder="Isabel De Blas Viñas"required>
+
+            </div><!--para salto de linea-->
+                <label for "age">Edad:</label>
+                <input type ="number"id="age" 
+                placeholder="ponga su Edad" required pattern="[0-9]{9}">
+                <!--tambien se puede escribir asi-->
+
+
+                <form method="post" action="/"></form>
+                <label>Email:
+                    <input type="email"name="Email"placeholder="gmail" required>
+                </label>
+                 <label>Telefono:</label>
+                  <input type ="tel"name ="name" placeholder="Isabel">
+                   <input type="submit" value =" Enviar contacto">
+            </fieldset>
+            
+                <br>
+           </form>
+            <fieldset>
+              
+                <legend><strong>informacion adicional</strong></legend>
+                
+                <div>
+                
+    
+                    <label for="why">¿Por que quieres contactar?</label>
+                    <select name ="why" id="why">
+                    <option value="1">Trabajo</option>
+                    <option value="2">Duda</option>
+                    <option value="3">Mas informacion</option>
+                </select>  
+
+                </div>
+                <div>
+                    <label for ="terms">¿aceptas los terminos?</label>
+                    <input type ="checkbox"id="terms" name="terms" required>
+                </div>
+
+                <div>
+                    <datalist id="languages">
+                        <option value="Java Script"></option>
+                        <option value="Python"></option>
+                        <option value="Java"></option>
+                        <option value="c#"></option>
+                    </datalist>
+                    <label>
+                        ¿Con que lenguaje quieres que te ayude?
+                        <input list="languages" name="lenguages">
+                    </label>    
+                 </details>
+                </div>
+            </fieldset>
+
+        </form>
+
+    </section>
+    
+        <br>
+        <br>
+    </main>
+            <footer>
+                <small>Lenguaje usado para crear esta web:HTML</small>
+                Copyrigth 2023 - El portfolio mas bonito
+
+                <a href="mailto:isabelblasv@gmail.com">Enviame un correo</a>
+                <a href="tel:+3473268">contacte por telefono</a>
+                <a href="whatsapp://send?text=Hola isa">contactame por whatsapp</a>
+            </footer>
+
+          </section>
+        
+        
+    </body>
+</html>
